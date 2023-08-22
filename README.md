@@ -1,5 +1,5 @@
 # VSC_Baekjoon
 
-filename = solved
+S_filename = solved
 
-U_filename = Unsolved
+U_filename == Unsolved

@@ -9,3 +9,6 @@ for i in range(num):
             cnt +=1
     print(cnt,end= " ")
     
+    
+    
+    

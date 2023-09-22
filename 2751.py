@@ -1,5 +1,10 @@
-num = int(input())
+import sys
 
-arr = [int(input()) for i in range(num)]
+n = int(sys.stdin.readline())
 
-print(*sorted(arr), sep='\n')
+arr = []
+
+for _ in range(n):
+    arr.append(int(sys.stdin.readline().rstrip()))
+    
+print(*sorted(arr),sep='\n')

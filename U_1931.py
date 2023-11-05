@@ -1,12 +1,16 @@
 n = int(input())
 
-arr = sorted([list(map(int, input().split())) for _ in range(n)])
+arr = [list(map(int, input().split())) for _ in range(n)]
 
-cnt = 1
-temp = arr[0][1]
-for i,j in arr:
-    if i >=temp:
-        cnt +=1
+arr = sorted(arr, key = lambda x: (x[1], x[0]))
+cnt = 0
+temp = 0
+for i, j in arr:
+    if temp == 0:
         temp = j
+        cnt += 1
+    elif i >= temp:
+        temp = j
+        cnt +=1
         
 print(cnt)
